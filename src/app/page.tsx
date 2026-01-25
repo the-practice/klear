@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Treatment for Depression | Klear",
@@ -13,24 +14,24 @@ function HeroSection() {
     <section className="relative pt-24 pb-20 lg:pt-32 lg:pb-28 gradient-hero overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
-          <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--klear-primary-50)] border border-[var(--klear-primary-200)] mb-6">
+          <div className="text-center lg:text-left animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--klear-primary-50)] border border-[var(--klear-primary-200)] mb-6 animate-fade-in-up">
               <span className="w-2 h-2 rounded-full bg-[var(--klear-primary-500)] animate-pulse-slow"></span>
               <span className="text-sm font-medium text-[var(--klear-primary-700)]">
                 Now available in Florida & Washington
               </span>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[var(--klear-neutral-900)]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[var(--klear-neutral-900)] animate-fade-in-up animate-delay-100">
               Find <span className="text-gradient">clarity</span> with at-home ketamine therapy
             </h1>
-            <p className="mt-6 text-lg sm:text-xl text-[var(--klear-neutral-600)] max-w-2xl mx-auto lg:mx-0">
+            <p className="mt-6 text-lg sm:text-xl text-[var(--klear-neutral-600)] max-w-2xl mx-auto lg:mx-0 animate-fade-in-up animate-delay-200">
               Clinician-guided ketamine treatment for depression, anxiety, and PTSD.
               Experience breakthrough relief from the comfort of your home.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animate-delay-300">
               <Link
                 href="/get-started"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-[var(--klear-primary-600)] hover:bg-[var(--klear-primary-700)] rounded-full shadow-lg shadow-[var(--klear-primary-600)]/25 transition-all hover:shadow-xl hover:shadow-[var(--klear-primary-600)]/30"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-[var(--klear-primary-600)] hover:bg-[var(--klear-primary-700)] rounded-full shadow-lg shadow-[var(--klear-primary-600)]/25 transition-all hover:shadow-xl hover:shadow-[var(--klear-primary-600)]/30 hover:-translate-y-0.5"
               >
                 Check if you qualify
                 <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -39,12 +40,12 @@ function HeroSection() {
               </Link>
               <Link
                 href="/how-it-works"
-                className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--klear-neutral-700)] bg-white hover:bg-[var(--klear-neutral-50)] rounded-full border border-[var(--klear-neutral-300)] transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--klear-neutral-700)] bg-white hover:bg-[var(--klear-neutral-50)] rounded-full border border-[var(--klear-neutral-300)] transition-all hover:-translate-y-0.5"
               >
                 Learn how it works
               </Link>
             </div>
-            <div className="mt-10 flex items-center justify-center lg:justify-start gap-8">
+            <div className="mt-10 flex items-center justify-center lg:justify-start gap-8 animate-fade-in-up animate-delay-400">
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -59,21 +60,14 @@ function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="mt-12 lg:mt-0">
+          <div className="mt-12 lg:mt-0 animate-fade-in-right animate-delay-200">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-[var(--klear-primary-100)] to-[var(--klear-secondary-100)] p-8 flex items-center justify-center">
-                <div className="w-full h-full rounded-2xl bg-white/80 backdrop-blur-sm shadow-xl flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-20 h-20 mx-auto rounded-full bg-[var(--klear-primary-100)] flex items-center justify-center mb-4">
-                      <svg className="w-10 h-10 text-[var(--klear-primary-600)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                      </svg>
-                    </div>
-                    <p className="text-lg font-semibold text-[var(--klear-neutral-900)]">Treatment delivered to your door</p>
-                    <p className="text-sm text-[var(--klear-neutral-600)] mt-2">Safe, discreet, and personalized</p>
-                  </div>
-                </div>
-              </div>
+              <ImagePlaceholder
+                id="1a"
+                aspectRatio="square"
+                description="Hero: Person relaxing at home during treatment session"
+                className="rounded-3xl"
+              />
             </div>
           </div>
         </div>
@@ -96,7 +90,11 @@ function StatsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
+            <div
+              key={index}
+              className="text-center animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
               <div className="text-3xl sm:text-4xl font-bold text-[var(--klear-primary-400)]">{stat.value}</div>
               <div className="mt-2 text-sm text-[var(--klear-neutral-400)]">{stat.label}</div>
             </div>
@@ -114,48 +112,36 @@ function HowItWorksSection() {
       number: "01",
       title: "Complete Assessment",
       description: "Take a quick online assessment to see if ketamine therapy is right for you. Our licensed clinicians review your health history.",
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-        </svg>
-      ),
+      imageId: "1b",
+      imageDesc: "Person completing online assessment on laptop",
     },
     {
       number: "02",
       title: "Video Consultation",
       description: "Meet with a licensed clinician via video call to discuss your treatment goals and create a personalized care plan.",
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-        </svg>
-      ),
+      imageId: "1c",
+      imageDesc: "Video consultation with clinician",
     },
     {
       number: "03",
       title: "Receive Treatment Kit",
       description: "Your personalized treatment kit is shipped discreetly to your home with everything you need for your sessions.",
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-        </svg>
-      ),
+      imageId: "1d",
+      imageDesc: "Treatment kit unboxing",
     },
     {
       number: "04",
       title: "Begin Your Journey",
       description: "Complete guided sessions from home with clinician support. Track your progress and adjust treatment as needed.",
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
+      imageId: "1e",
+      imageDesc: "Peaceful at-home treatment session",
     },
   ];
 
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--klear-neutral-900)]">
             How Klear works
           </h2>
@@ -165,24 +151,31 @@ function HowItWorksSection() {
         </div>
 
         <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((step) => (
-            <div key={step.number} className="relative group">
-              <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-[var(--klear-neutral-50)] hover:bg-[var(--klear-primary-50)] transition-colors">
-                <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center text-[var(--klear-primary-600)] group-hover:shadow-md transition-shadow">
-                  {step.icon}
-                </div>
-                <div className="mt-2 text-xs font-semibold text-[var(--klear-primary-600)]">{step.number}</div>
-                <h3 className="mt-4 text-lg font-semibold text-[var(--klear-neutral-900)]">{step.title}</h3>
+          {steps.map((step, index) => (
+            <div
+              key={step.number}
+              className="relative group animate-fade-in-up"
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-[var(--klear-neutral-50)] hover:bg-[var(--klear-primary-50)] transition-all hover:-translate-y-1">
+                <ImagePlaceholder
+                  id={step.imageId}
+                  aspectRatio="square"
+                  description={step.imageDesc}
+                  className="w-full mb-4"
+                />
+                <div className="text-xs font-semibold text-[var(--klear-primary-600)]">{step.number}</div>
+                <h3 className="mt-2 text-lg font-semibold text-[var(--klear-neutral-900)]">{step.title}</h3>
                 <p className="mt-2 text-sm text-[var(--klear-neutral-600)]">{step.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center animate-fade-in-up animate-delay-600">
           <Link
             href="/how-it-works"
-            className="inline-flex items-center text-[var(--klear-primary-600)] hover:text-[var(--klear-primary-700)] font-medium"
+            className="inline-flex items-center text-[var(--klear-primary-600)] hover:text-[var(--klear-primary-700)] font-medium transition-colors"
           >
             Learn more about our process
             <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -201,63 +194,45 @@ function BenefitsSection() {
     {
       title: "At-Home Comfort",
       description: "Experience treatment in the safety and privacy of your own home, surrounded by familiar comforts.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-      ),
+      imageId: "1f",
+      imageDesc: "Cozy home treatment environment",
     },
     {
       title: "Licensed Clinicians",
       description: "Work with board-certified clinicians who specialize in ketamine-assisted therapy and mental health.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
+      imageId: "1g",
+      imageDesc: "Professional clinician portrait",
     },
     {
       title: "Evidence-Based",
       description: "Treatment protocols backed by clinical research and peer-reviewed studies on ketamine therapy.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-        </svg>
-      ),
+      imageId: "1h",
+      imageDesc: "Research/scientific imagery",
     },
     {
       title: "Ongoing Support",
       description: "Get continuous care with integration coaching, progress tracking, and clinician check-ins.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
+      imageId: "1i",
+      imageDesc: "Support team or coaching session",
     },
     {
       title: "Affordable Pricing",
       description: "Transparent pricing with flexible payment options. HSA/FSA eligible for maximum savings.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
+      imageId: "1j",
+      imageDesc: "HSA/FSA cards or pricing visual",
     },
     {
       title: "Personalized Care",
       description: "Treatment plans tailored to your unique needs, health history, and wellness goals.",
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      ),
+      imageId: "1k",
+      imageDesc: "Personalized treatment plan visual",
     },
   ];
 
   return (
     <section className="py-20 lg:py-28 bg-[var(--klear-neutral-50)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--klear-neutral-900)]">
             Why choose Klear
           </h2>
@@ -268,12 +243,21 @@ function BenefitsSection() {
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-[var(--klear-primary-50)] flex items-center justify-center text-[var(--klear-primary-600)]">
-                {benefit.icon}
+            <div
+              key={index}
+              className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all hover:-translate-y-1 animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <ImagePlaceholder
+                id={benefit.imageId}
+                aspectRatio="video"
+                description={benefit.imageDesc}
+                className="rounded-none"
+              />
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-[var(--klear-neutral-900)]">{benefit.title}</h3>
+                <p className="mt-2 text-[var(--klear-neutral-600)]">{benefit.description}</p>
               </div>
-              <h3 className="mt-4 text-lg font-semibold text-[var(--klear-neutral-900)]">{benefit.title}</h3>
-              <p className="mt-2 text-[var(--klear-neutral-600)]">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -290,25 +274,28 @@ function TestimonialsSection() {
       author: "Sarah M.",
       location: "Tampa, FL",
       condition: "Depression",
+      imageId: "1l",
     },
     {
       quote: "The entire process was so supportive. From my first consultation to ongoing check-ins, I never felt alone in my journey.",
       author: "Michael R.",
       location: "Seattle, WA",
       condition: "Anxiety",
+      imageId: "1m",
     },
     {
       quote: "I was skeptical at first, but the results speak for themselves. My PTSD symptoms have decreased significantly.",
       author: "Jennifer L.",
       location: "Miami, FL",
       condition: "PTSD",
+      imageId: "1n",
     },
   ];
 
   return (
     <section className="py-20 lg:py-28 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--klear-neutral-900)]">
             Real stories from real patients
           </h2>
@@ -319,7 +306,11 @@ function TestimonialsSection() {
 
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-[var(--klear-neutral-50)] rounded-2xl p-8">
+            <div
+              key={index}
+              className="bg-[var(--klear-neutral-50)] rounded-2xl p-8 animate-fade-in-up transition-all hover:-translate-y-1"
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 text-[var(--klear-accent-500)]" fill="currentColor" viewBox="0 0 20 20">
@@ -329,10 +320,12 @@ function TestimonialsSection() {
               </div>
               <blockquote className="text-[var(--klear-neutral-700)]">&ldquo;{testimonial.quote}&rdquo;</blockquote>
               <div className="mt-6 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-[var(--klear-primary-100)] flex items-center justify-center">
-                  <span className="text-lg font-semibold text-[var(--klear-primary-600)]">
-                    {testimonial.author.charAt(0)}
-                  </span>
+                <div className="w-12 h-12 rounded-full overflow-hidden">
+                  <ImagePlaceholder
+                    id={testimonial.imageId}
+                    aspectRatio="square"
+                    className="w-full h-full rounded-full"
+                  />
                 </div>
                 <div>
                   <div className="font-medium text-[var(--klear-neutral-900)]">{testimonial.author}</div>
@@ -343,10 +336,10 @@ function TestimonialsSection() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center animate-fade-in-up animate-delay-500">
           <Link
             href="/reviews"
-            className="inline-flex items-center text-[var(--klear-primary-600)] hover:text-[var(--klear-primary-700)] font-medium"
+            className="inline-flex items-center text-[var(--klear-primary-600)] hover:text-[var(--klear-primary-700)] font-medium transition-colors"
           >
             Read more reviews
             <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -391,7 +384,7 @@ function FAQSection() {
   return (
     <section className="py-20 lg:py-28 bg-[var(--klear-neutral-50)]">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <div className="text-center animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--klear-neutral-900)]">
             Frequently asked questions
           </h2>
@@ -400,9 +393,13 @@ function FAQSection() {
           </p>
         </div>
 
-        <div className="mt-12 space-y-6">
+        <div className="mt-12 space-y-4">
           {faqs.map((faq, index) => (
-            <details key={index} className="group bg-white rounded-xl p-6 shadow-sm">
+            <details
+              key={index}
+              className="group bg-white rounded-xl p-6 shadow-sm animate-fade-in-up transition-all hover:shadow-md"
+              style={{ animationDelay: `${index * 75}ms` }}
+            >
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <h3 className="font-medium text-[var(--klear-neutral-900)]">{faq.question}</h3>
                 <svg
@@ -426,18 +423,28 @@ function FAQSection() {
 // CTA Section
 function CTASection() {
   return (
-    <section className="py-20 lg:py-28 bg-gradient-to-br from-[var(--klear-primary-600)] to-[var(--klear-primary-800)]">
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+    <section className="py-20 lg:py-28 bg-gradient-to-br from-[var(--klear-primary-600)] to-[var(--klear-primary-800)] relative overflow-hidden">
+      {/* Background Image Placeholder */}
+      <div className="absolute inset-0 opacity-10">
+        <ImagePlaceholder
+          id="1o"
+          aspectRatio="wide"
+          description="Abstract calming pattern or nature scene"
+          className="w-full h-full rounded-none border-none"
+        />
+      </div>
+
+      <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white animate-fade-in-up">
           Ready to start your healing journey?
         </h2>
-        <p className="mt-4 text-lg text-[var(--klear-primary-100)]">
+        <p className="mt-4 text-lg text-[var(--klear-primary-100)] animate-fade-in-up animate-delay-100">
           Take the first step toward lasting relief. Our quick assessment will help determine if Klear is right for you.
         </p>
-        <div className="mt-10">
+        <div className="mt-10 animate-fade-in-up animate-delay-200">
           <Link
             href="/get-started"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--klear-primary-700)] bg-white hover:bg-[var(--klear-neutral-100)] rounded-full shadow-lg transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-[var(--klear-primary-700)] bg-white hover:bg-[var(--klear-neutral-100)] rounded-full shadow-lg transition-all hover:-translate-y-0.5 hover:shadow-xl"
           >
             Check if you qualify
             <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -445,7 +452,7 @@ function CTASection() {
             </svg>
           </Link>
         </div>
-        <p className="mt-6 text-sm text-[var(--klear-primary-200)]">
+        <p className="mt-6 text-sm text-[var(--klear-primary-200)] animate-fade-in-up animate-delay-300">
           Free assessment • No commitment required
         </p>
       </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 
 type Step = 1 | 2 | 3 | 4;
 
@@ -51,10 +52,20 @@ export default function GetStartedPage() {
   const isEligible = formData.state === "florida" || formData.state === "washington";
 
   return (
-    <div className="pt-16 min-h-screen bg-gradient-to-b from-[var(--klear-primary-50)] to-white">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-20">
+    <div className="pt-16 min-h-screen bg-gradient-to-b from-[var(--klear-primary-50)] to-white relative overflow-hidden">
+      {/* Background Image Placeholder - Edge to Edge */}
+      <div className="absolute inset-0 opacity-5">
+        <ImagePlaceholder
+          id="6a"
+          aspectRatio="banner"
+          description="Abstract calm/hope pattern"
+          className="w-full h-full rounded-none border-0"
+        />
+      </div>
+
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         {/* Progress Bar */}
-        <div className="mb-12">
+        <div className="mb-12 animate-fade-in">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm font-medium text-[var(--klear-neutral-600)]">Step {step} of 4</span>
             <span className="text-sm text-[var(--klear-neutral-500)]">{step * 25}% complete</span>
@@ -67,7 +78,7 @@ export default function GetStartedPage() {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg p-8">
+        <div className="bg-white rounded-2xl shadow-lg p-8 animate-scale-in">
           {/* Step 1: Location */}
           {step === 1 && (
             <div className="space-y-6">
@@ -79,6 +90,13 @@ export default function GetStartedPage() {
                   First, tell us where you&apos;re located.
                 </p>
               </div>
+
+              <ImagePlaceholder
+                id="6b"
+                aspectRatio="video"
+                description="Map of Florida and Washington"
+                className="w-full"
+              />
 
               <div className="space-y-3">
                 <label className="block">
@@ -118,6 +136,13 @@ export default function GetStartedPage() {
                 </p>
               </div>
 
+              <ImagePlaceholder
+                id="6c"
+                aspectRatio="video"
+                description="Diverse age group of adults"
+                className="w-full"
+              />
+
               <div className="grid grid-cols-2 gap-3">
                 {["18-24", "25-34", "35-44", "45-54", "55-64", "65+"].map((age) => (
                   <button
@@ -147,6 +172,13 @@ export default function GetStartedPage() {
                   Select all that apply.
                 </p>
               </div>
+
+              <ImagePlaceholder
+                id="6d"
+                aspectRatio="video"
+                description="Mental wellness illustration"
+                className="w-full"
+              />
 
               <div className="space-y-3">
                 {conditions.map((condition) => (
@@ -209,6 +241,13 @@ export default function GetStartedPage() {
                 </p>
               </div>
 
+              <ImagePlaceholder
+                id="6e"
+                aspectRatio="video"
+                description="Clinician ready to help"
+                className="w-full"
+              />
+
               <div className="space-y-3">
                 <label className="block">
                   <span className="text-sm font-medium text-[var(--klear-neutral-700)]">Email address</span>
@@ -266,7 +305,7 @@ export default function GetStartedPage() {
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-8 flex items-center justify-center gap-6 text-sm text-[var(--klear-neutral-500)]">
+        <div className="mt-8 flex items-center justify-center gap-6 text-sm text-[var(--klear-neutral-500)] animate-fade-in-up opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
           <div className="flex items-center gap-2">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />

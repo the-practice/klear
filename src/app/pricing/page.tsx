@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -65,9 +66,18 @@ export default function PricingPage() {
   return (
     <div className="pt-16">
       {/* Hero */}
-      <section className="py-20 lg:py-28 gradient-hero">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
+      <section className="py-20 lg:py-28 gradient-hero relative overflow-hidden">
+        {/* Background Image Placeholder - Edge to Edge */}
+        <div className="absolute inset-0 opacity-10">
+          <ImagePlaceholder
+            id="3a"
+            aspectRatio="banner"
+            description="Abstract wellness/value visual"
+            className="w-full h-full rounded-none border-0"
+          />
+        </div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]">
               Transparent, affordable pricing
             </h1>
@@ -88,14 +98,15 @@ export default function PricingPage() {
       <section className="py-20 lg:py-28 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
-            {plans.map((plan) => (
+            {plans.map((plan, index) => (
               <div
                 key={plan.name}
-                className={`relative rounded-2xl p-8 ${
+                className={`relative rounded-2xl p-8 animate-fade-in-up opacity-0 ${
                   plan.popular
                     ? "bg-[var(--klear-primary-600)] text-white ring-4 ring-[var(--klear-primary-600)] ring-offset-4"
                     : "bg-[var(--klear-neutral-50)]"
                 }`}
+                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-[var(--klear-accent-500)] text-white text-sm font-medium rounded-full">
@@ -122,8 +133,8 @@ export default function PricingPage() {
                   </p>
                 </div>
                 <ul className="mt-8 space-y-4">
-                  {plan.features.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-3">
+                  {plan.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-start gap-3">
                       <svg
                         className={`w-5 h-5 flex-shrink-0 ${plan.popular ? "text-[var(--klear-primary-200)]" : "text-[var(--klear-primary-500)]"}`}
                         fill="currentColor"
@@ -158,31 +169,53 @@ export default function PricingPage() {
       {/* What's Included */}
       <section className="py-20 lg:py-28 bg-[var(--klear-neutral-50)]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto animate-fade-in">
             <h2 className="text-3xl font-bold text-[var(--klear-neutral-900)]">
               What&apos;s included in every plan
             </h2>
           </div>
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Licensed Clinicians", desc: "Board-certified mental health professionals" },
-              { title: "Secure Platform", desc: "HIPAA-compliant telehealth and messaging" },
-              { title: "Treatment Kit", desc: "Everything you need shipped to your door" },
-              { title: "24/7 Support", desc: "Clinical team available for emergencies" },
+              { title: "Licensed Clinicians", desc: "Board-certified mental health professionals", imageId: "3b" },
+              { title: "Secure Platform", desc: "HIPAA-compliant telehealth and messaging", imageId: "3c" },
+              { title: "Treatment Kit", desc: "Everything you need shipped to your door", imageId: "3d" },
+              { title: "24/7 Support", desc: "Clinical team available for emergencies", imageId: "3e" },
             ].map((item, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 text-center">
-                <h3 className="font-semibold text-[var(--klear-neutral-900)]">{item.title}</h3>
-                <p className="mt-2 text-sm text-[var(--klear-neutral-600)]">{item.desc}</p>
+              <div
+                key={index}
+                className="bg-white rounded-xl overflow-hidden animate-fade-in-up opacity-0"
+                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
+              >
+                <ImagePlaceholder
+                  id={item.imageId}
+                  aspectRatio="square"
+                  description={item.title}
+                  className="w-full rounded-none border-x-0 border-t-0"
+                />
+                <div className="p-6 text-center">
+                  <h3 className="font-semibold text-[var(--klear-neutral-900)]">{item.title}</h3>
+                  <p className="mt-2 text-sm text-[var(--klear-neutral-600)]">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Treatment Kit Image */}
+      <section className="relative">
+        <ImagePlaceholder
+          id="3f"
+          aspectRatio="wide"
+          description="Full treatment kit laid out - Edge to Edge"
+          className="w-full rounded-none border-0"
+        />
+      </section>
+
       {/* FAQ */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[var(--klear-neutral-900)] text-center">
+          <h2 className="text-3xl font-bold text-[var(--klear-neutral-900)] text-center animate-fade-in">
             Pricing FAQs
           </h2>
           <div className="mt-12 space-y-6">
@@ -204,7 +237,11 @@ export default function PricingPage() {
                 a: "No hidden fees. The price you see includes consultation, medication, supplies, and clinical support.",
               },
             ].map((faq, index) => (
-              <details key={index} className="group bg-[var(--klear-neutral-50)] rounded-xl p-6">
+              <details
+                key={index}
+                className="group bg-[var(--klear-neutral-50)] rounded-xl p-6 animate-fade-in-up opacity-0"
+                style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
+              >
                 <summary className="flex items-center justify-between cursor-pointer list-none font-medium text-[var(--klear-neutral-900)]">
                   {faq.q}
                   <svg className="w-5 h-5 text-[var(--klear-neutral-500)] group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
