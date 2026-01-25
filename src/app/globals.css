@@ -1,26 +1,149 @@
 @import "tailwindcss";
 
+/* Klear Design System - Based on Web Design MCP Guidance */
+/* Trustworthy, calm, medical wellness brand */
+
 :root {
+  /* Primary Colors - Deep Teal (Trust & Calm) */
+  --klear-primary-50: #f0fdfa;
+  --klear-primary-100: #ccfbf1;
+  --klear-primary-200: #99f6e4;
+  --klear-primary-300: #5eead4;
+  --klear-primary-400: #2dd4bf;
+  --klear-primary-500: #14b8a6;
+  --klear-primary-600: #0d9488;
+  --klear-primary-700: #0f766e;
+  --klear-primary-800: #115e59;
+  --klear-primary-900: #134e4a;
+
+  /* Secondary Colors - Sage Green (Healing) */
+  --klear-secondary-50: #f7faf7;
+  --klear-secondary-100: #e8f0e8;
+  --klear-secondary-200: #d1e1d1;
+  --klear-secondary-300: #a8c7a8;
+  --klear-secondary-400: #7daa7d;
+  --klear-secondary-500: #5c8f5c;
+  --klear-secondary-600: #4a7a4a;
+  --klear-secondary-700: #3d633d;
+  --klear-secondary-800: #345134;
+  --klear-secondary-900: #2c432c;
+
+  /* Accent Colors - Warm Coral (Hope & Approachability) */
+  --klear-accent-50: #fff7f5;
+  --klear-accent-100: #ffebe5;
+  --klear-accent-200: #ffd4c7;
+  --klear-accent-300: #ffb199;
+  --klear-accent-400: #ff8a6b;
+  --klear-accent-500: #f97548;
+  --klear-accent-600: #e85d2f;
+  --klear-accent-700: #c44a22;
+  --klear-accent-800: #a03d1f;
+  --klear-accent-900: #84361f;
+
+  /* Neutral Colors - Warm Grays */
+  --klear-neutral-50: #fafafa;
+  --klear-neutral-100: #f5f5f4;
+  --klear-neutral-200: #e7e5e4;
+  --klear-neutral-300: #d6d3d1;
+  --klear-neutral-400: #a8a29e;
+  --klear-neutral-500: #78716c;
+  --klear-neutral-600: #57534e;
+  --klear-neutral-700: #44403c;
+  --klear-neutral-800: #292524;
+  --klear-neutral-900: #1c1917;
+
+  /* Semantic Colors */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1c1917;
+  --muted: #f5f5f4;
+  --muted-foreground: #78716c;
+  --border: #e7e5e4;
+  --ring: #14b8a6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--klear-primary-600);
+  --color-primary-foreground: #ffffff;
+  --color-secondary: var(--klear-secondary-500);
+  --color-accent: var(--klear-accent-500);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  /* Typography */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter);
+
+  /* Spacing */
+  --section-padding: 5rem;
+  --container-max: 80rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Remove dark mode for medical site - maintain consistency */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--klear-neutral-900);
+}
+
+/* Focus States - Accessibility */
+:focus-visible {
+  outline: 2px solid var(--klear-primary-500);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--klear-primary-100);
+  color: var(--klear-primary-900);
+}
+
+/* Custom utility classes */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--klear-primary-600) 0%, var(--klear-primary-700) 100%);
+}
+
+.gradient-hero {
+  background: linear-gradient(180deg, var(--klear-primary-50) 0%, #ffffff 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--klear-primary-600) 0%, var(--klear-secondary-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
 }
