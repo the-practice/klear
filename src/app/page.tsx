@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 
@@ -158,12 +159,24 @@ function HowItWorksSection() {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-[var(--klear-neutral-50)] hover:bg-[var(--klear-primary-50)] transition-all hover:-translate-y-1">
-                <ImagePlaceholder
-                  id={step.imageId}
-                  aspectRatio="square"
-                  description={step.imageDesc}
-                  className="w-full mb-4"
-                />
+                {step.imageId === "1b" ? (
+                  <div className="w-full mb-4 relative aspect-square rounded-lg overflow-hidden">
+                    <Image
+                      src="/step-1b.avif"
+                      alt={step.imageDesc}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                ) : (
+                  <ImagePlaceholder
+                    id={step.imageId}
+                    aspectRatio="square"
+                    description={step.imageDesc}
+                    className="w-full mb-4"
+                  />
+                )}
                 <div className="text-xs font-semibold text-[var(--klear-primary-600)]">{step.number}</div>
                 <h3 className="mt-2 text-lg font-semibold text-[var(--klear-neutral-900)]">{step.title}</h3>
                 <p className="mt-2 text-sm text-[var(--klear-neutral-600)]">{step.description}</p>
