@@ -160,12 +160,42 @@ function HowItWorksSection() {
             >
               <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-[var(--klear-neutral-50)] hover:bg-[var(--klear-primary-50)] transition-all hover:-translate-y-1">
                 {step.imageId === "1b" ? (
-                  <div className="w-full mb-4 relative aspect-square rounded-lg overflow-hidden">
+                  <div className="w-full mb-4 relative aspect-video rounded-lg overflow-hidden">
                     <Image
-                      src="/step-1b.avif"
+                      src="/onlineassessment.jpg"
                       alt={step.imageDesc}
                       fill
-                      className="object-cover"
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                ) : step.imageId === "1c" ? (
+                  <div className="w-full mb-4 relative aspect-video rounded-lg overflow-hidden">
+                    <Image
+                      src="/videomeeting.webp"
+                      alt={step.imageDesc}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                ) : step.imageId === "1d" ? (
+                  <div className="w-full mb-4 relative aspect-video rounded-lg overflow-hidden">
+                    <Image
+                      src="/delivery.webp"
+                      alt={step.imageDesc}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                ) : step.imageId === "1e" ? (
+                  <div className="w-full mb-4 relative aspect-video rounded-lg overflow-hidden">
+                    <Image
+                      src="/change.webp"
+                      alt={step.imageDesc}
+                      fill
+                      className="object-contain"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
