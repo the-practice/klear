@@ -63,11 +63,13 @@ function HeroSection() {
           </div>
           <div className="mt-12 lg:mt-0 animate-fade-in-right animate-delay-200">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
-              <ImagePlaceholder
-                id="1a"
-                aspectRatio="square"
-                description="Hero: Person relaxing at home during treatment session"
+              <Image
+                src="/transparent.webp"
+                alt="Hero: Person relaxing at home during treatment session"
+                width={600}
+                height={600}
                 className="rounded-3xl"
+                priority
               />
             </div>
           </div>
