@@ -5,7 +5,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Transparent pricing for Klear's at-home ketamine therapy. Affordable treatment plans with HSA/FSA eligibility and flexible payment options.",
+    "Transparent pricing for Klear®'s at-home ketamine therapy. Affordable treatment plans with HSA/FSA eligibility and flexible payment options.",
 };
 
 export default function PricingPage() {
@@ -222,7 +222,7 @@ export default function PricingPage() {
             {[
               {
                 q: "Can I use my HSA or FSA?",
-                a: "Yes! Klear treatments are eligible for HSA and FSA funds. We provide all necessary documentation for reimbursement.",
+                a: "Yes! Klear® treatments are eligible for HSA and FSA funds. We provide all necessary documentation for reimbursement.",
               },
               {
                 q: "Do you offer payment plans?",

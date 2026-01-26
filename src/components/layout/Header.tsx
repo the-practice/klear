@@ -24,7 +24,7 @@ export default function Header() {
                 <span className="text-white font-bold text-lg">K</span>
               </div>
               <span className="text-xl font-semibold text-[var(--klear-neutral-900)]">
-                Klear
+                Klear<sup>®</sup>
               </span>
             </Link>
           </div>

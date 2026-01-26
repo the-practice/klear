@@ -13,11 +13,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kleartreatment.com"),
   title: {
-    default: "Klear | At-Home Ketamine Treatment for Depression",
-    template: "%s | Klear",
+    default: "Klear® | At-Home Ketamine Treatment for Depression",
+    template: "%s | Klear®",
   },
   description:
-    "Klear offers FDA-supervised at-home ketamine therapy for depression, anxiety, and PTSD. Licensed clinicians, personalized treatment plans, and ongoing support. Available in Florida and Washington State.",
+    "Klear® offers FDA-supervised at-home ketamine therapy for depression, anxiety, and PTSD. Licensed clinicians, personalized treatment plans, and ongoing support. Available in Florida and Washington State.",
   keywords: [
     "ketamine therapy",
     "ketamine treatment",
@@ -31,15 +31,15 @@ export const metadata: Metadata = {
     "Florida ketamine treatment",
     "Washington ketamine treatment",
   ],
-  authors: [{ name: "Klear" }],
-  creator: "Klear",
-  publisher: "Klear",
+  authors: [{ name: "Klear®" }],
+  creator: "Klear®",
+  publisher: "Klear®",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://kleartreatment.com",
-    siteName: "Klear",
-    title: "Klear | At-Home Ketamine Treatment for Depression",
+    siteName: "Klear®",
+    title: "Klear® | At-Home Ketamine Treatment for Depression",
     description:
       "Transform your mental health with clinician-guided ketamine therapy from the comfort of home. Available in Florida and Washington State.",
     images: [
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Klear - At-Home Ketamine Treatment",
+        alt: "Klear® - At-Home Ketamine Treatment",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Klear | At-Home Ketamine Treatment for Depression",
+    title: "Klear® | At-Home Ketamine Treatment for Depression",
     description:
       "Transform your mental health with clinician-guided ketamine therapy from the comfort of home.",
     images: ["/og-image.jpg"],
@@ -89,7 +89,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "MedicalBusiness",
-              name: "Klear",
+              name: "Klear®",
               description:
                 "At-home ketamine treatment for depression, anxiety, and PTSD",
               url: "https://kleartreatment.com",

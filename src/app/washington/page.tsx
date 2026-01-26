@@ -5,7 +5,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "Ketamine Treatment in Washington State | At-Home Therapy",
   description:
-    "Klear offers at-home ketamine treatment for depression, anxiety, and PTSD in Washington State. Licensed Washington clinicians, discreet home delivery to Seattle, Tacoma, Spokane & statewide.",
+    "Klear® offers at-home ketamine treatment for depression, anxiety, and PTSD in Washington State. Licensed Washington clinicians, discreet home delivery to Seattle, Tacoma, Spokane & statewide.",
   keywords: [
     "ketamine treatment Washington",
     "ketamine therapy Washington State",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     "Washington mental health treatment",
   ],
   openGraph: {
-    title: "At-Home Ketamine Treatment in Washington State | Klear",
+    title: "At-Home Ketamine Treatment in Washington State | Klear®",
     description:
-      "Experience breakthrough depression and anxiety treatment from home. Klear provides licensed ketamine therapy throughout Washington State.",
+      "Experience breakthrough depression and anxiety treatment from home. Klear® provides licensed ketamine therapy throughout Washington State.",
   },
 };
 
@@ -94,7 +94,7 @@ export default function WashingtonPage() {
               Serving patients across Washington State
             </h2>
             <p className="mt-4 text-[var(--klear-neutral-600)]">
-              From the Puget Sound to Eastern Washington, Klear delivers ketamine treatment to your door.
+              From the Puget Sound to Eastern Washington, Klear<sup>®</sup> delivers ketamine treatment to your door.
             </p>
           </div>
 
@@ -123,7 +123,7 @@ export default function WashingtonPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left opacity-0" style={{ animationFillMode: 'forwards' }}>
               <h2 className="text-3xl font-bold text-[var(--klear-neutral-900)]">
-                Why Washingtonians choose Klear
+                Why Washingtonians choose Klear<sup>®</sup>
               </h2>
               <p className="mt-4 text-[var(--klear-neutral-600)]">
                 Washington&apos;s gray winters and high-pressure tech culture contribute to elevated rates of depression and anxiety. At-home ketamine therapy offers a convenient, effective solution.
@@ -191,7 +191,7 @@ export default function WashingtonPage() {
                   ))}
                 </div>
                 <blockquote className="text-xl lg:text-2xl text-[var(--klear-neutral-800)] leading-relaxed">
-                  &ldquo;Working in Seattle tech, I was burning out fast. The dark winters made everything worse. Klear&apos;s at-home treatment let me get help without taking time off work. My depression has improved dramatically.&rdquo;
+                  &ldquo;Working in Seattle tech, I was burning out fast. The dark winters made everything worse. Klear<sup>®</sup>&apos;s at-home treatment let me get help without taking time off work. My depression has improved dramatically.&rdquo;
                 </blockquote>
                 <div className="mt-8">
                   <div className="font-semibold text-[var(--klear-neutral-900)]">David K.</div>

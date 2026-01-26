@@ -5,7 +5,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "Learn how Klear's at-home ketamine therapy program works. From your initial assessment to ongoing treatment, we guide you every step of the way.",
+    "Learn how Klear®'s at-home ketamine therapy program works. From your initial assessment to ongoing treatment, we guide you every step of the way.",
 };
 
 export default function HowItWorksPage() {
@@ -234,7 +234,7 @@ export default function HowItWorksPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10 animate-scale-in">
           <h2 className="text-3xl font-bold text-white">Ready to get started?</h2>
           <p className="mt-4 text-[var(--klear-primary-100)]">
-            Take our free assessment to see if Klear is right for you.
+            Take our free assessment to see if Klear<sup>®</sup> is right for you.
           </p>
           <div className="mt-8">
             <Link

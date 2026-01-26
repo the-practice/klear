@@ -47,7 +47,7 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--klear-primary-400)] to-[var(--klear-primary-600)] flex items-center justify-center">
                 <span className="text-white font-bold text-xl">K</span>
               </div>
-              <span className="text-2xl font-semibold text-white">Klear</span>
+              <span className="text-2xl font-semibold text-white">Klear<sup>®</sup></span>
             </Link>
             <p className="text-[var(--klear-neutral-400)] text-sm max-w-xs">
               Clinician-guided ketamine therapy from the comfort of your home.
@@ -137,7 +137,7 @@ export default function Footer() {
           <div className="rounded-lg bg-[var(--klear-neutral-800)] p-4">
             <h4 className="text-sm font-semibold text-white mb-2">Important Safety Information</h4>
             <p className="text-xs text-[var(--klear-neutral-400)] leading-relaxed">
-              Ketamine is a controlled substance. Klear provides ketamine therapy under the supervision of licensed
+              Ketamine is a controlled substance. Klear<sup>®</sup> provides ketamine therapy under the supervision of licensed
               clinicians for adults with treatment-resistant depression, anxiety, or PTSD. Not everyone is a candidate
               for ketamine therapy. Potential side effects include dissociation, nausea, elevated blood pressure, and
               dizziness. Ketamine should not be used by individuals with uncontrolled hypertension, certain heart
@@ -151,7 +151,7 @@ export default function Footer() {
         <div className="mt-8 border-t border-[var(--klear-neutral-800)] pt-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <p className="text-xs text-[var(--klear-neutral-500)]">
-              &copy; {new Date().getFullYear()} Klear. All rights reserved.
+              &copy; {new Date().getFullYear()} Klear<sup>®</sup>. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0 flex space-x-6">
               {footerNavigation.legal.map((item) => (

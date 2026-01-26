@@ -4,13 +4,13 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "Patient Reviews & Testimonials",
   description:
-    "Read real reviews from Klear patients who have transformed their mental health with at-home ketamine therapy for depression, anxiety, and PTSD.",
+    "Read real reviews from Klear® patients who have transformed their mental health with at-home ketamine therapy for depression, anxiety, and PTSD.",
 };
 
 export default function ReviewsPage() {
   const reviews = [
     {
-      quote: "After struggling with depression for over 15 years and trying countless medications, Klear was a turning point. Within weeks, I noticed a shift in how I experienced life. The fog started to lift.",
+      quote: "After struggling with depression for over 15 years and trying countless medications, Klear® was a turning point. Within weeks, I noticed a shift in how I experienced life. The fog started to lift.",
       author: "Sarah M.",
       location: "Tampa, FL",
       condition: "Depression",
@@ -26,7 +26,7 @@ export default function ReviewsPage() {
       date: "2 months ago",
     },
     {
-      quote: "As a veteran with PTSD, I had given up on finding relief. Klear gave me hope again. The treatment combined with integration coaching has been life-changing.",
+      quote: "As a veteran with PTSD, I had given up on finding relief. Klear® gave me hope again. The treatment combined with integration coaching has been life-changing.",
       author: "James K.",
       location: "Orlando, FL",
       condition: "PTSD",
@@ -42,7 +42,7 @@ export default function ReviewsPage() {
       date: "1 month ago",
     },
     {
-      quote: "The integration sessions are what set Klear apart. It's not just about the medicine—it's about processing the experience and making lasting changes. My anxiety is more manageable than ever.",
+      quote: "The integration sessions are what set Klear® apart. It's not just about the medicine—it's about processing the experience and making lasting changes. My anxiety is more manageable than ever.",
       author: "David P.",
       location: "Tacoma, WA",
       condition: "Anxiety",
@@ -100,7 +100,7 @@ export default function ReviewsPage() {
               Hear from our patients
             </h1>
             <p className="mt-6 text-lg text-[var(--klear-neutral-600)]">
-              Real stories from people who have experienced the transformative power of ketamine therapy with Klear.
+              Real stories from people who have experienced the transformative power of ketamine therapy with Klear<sup>®</sup>.
             </p>
           </div>
 
@@ -139,7 +139,7 @@ export default function ReviewsPage() {
                 ))}
               </div>
               <blockquote className="text-2xl lg:text-3xl text-[var(--klear-neutral-800)] font-medium leading-relaxed">
-                &ldquo;Klear changed my life. After 20 years of struggling with treatment-resistant depression, I finally found something that works.&rdquo;
+                &ldquo;Klear<sup>®</sup> changed my life. After 20 years of struggling with treatment-resistant depression, I finally found something that works.&rdquo;
               </blockquote>
               <div className="mt-8">
                 <div className="font-semibold text-[var(--klear-neutral-900)] text-lg">Maria G.</div>

@@ -5,7 +5,7 @@ import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "Ketamine Treatment in Florida | At-Home Therapy",
   description:
-    "Klear offers at-home ketamine treatment for depression, anxiety, and PTSD in Florida. Licensed Florida clinicians, discreet home delivery to Tampa, Miami, Orlando, Jacksonville & statewide.",
+    "Klear® offers at-home ketamine treatment for depression, anxiety, and PTSD in Florida. Licensed Florida clinicians, discreet home delivery to Tampa, Miami, Orlando, Jacksonville & statewide.",
   keywords: [
     "ketamine treatment Florida",
     "ketamine therapy Florida",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     "Florida mental health treatment",
   ],
   openGraph: {
-    title: "At-Home Ketamine Treatment in Florida | Klear",
+    title: "At-Home Ketamine Treatment in Florida | Klear®",
     description:
-      "Experience breakthrough depression and anxiety treatment from home. Klear provides licensed ketamine therapy throughout Florida.",
+      "Experience breakthrough depression and anxiety treatment from home. Klear® provides licensed ketamine therapy throughout Florida.",
   },
 };
 
@@ -94,7 +94,7 @@ export default function FloridaPage() {
               Serving patients across Florida
             </h2>
             <p className="mt-4 text-[var(--klear-neutral-600)]">
-              No matter where you are in the Sunshine State, Klear can deliver ketamine treatment to your door.
+              No matter where you are in the Sunshine State, Klear<sup>®</sup> can deliver ketamine treatment to your door.
             </p>
           </div>
 
@@ -123,7 +123,7 @@ export default function FloridaPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left opacity-0" style={{ animationFillMode: 'forwards' }}>
               <h2 className="text-3xl font-bold text-[var(--klear-neutral-900)]">
-                Why Floridians choose Klear
+                Why Floridians choose Klear<sup>®</sup>
               </h2>
               <p className="mt-4 text-[var(--klear-neutral-600)]">
                 Florida&apos;s mental health needs are unique. With a diverse population and busy lifestyles, at-home ketamine therapy offers a convenient, effective solution.
@@ -191,7 +191,7 @@ export default function FloridaPage() {
                   ))}
                 </div>
                 <blockquote className="text-xl lg:text-2xl text-[var(--klear-neutral-800)] leading-relaxed">
-                  &ldquo;As a Tampa resident, I was thrilled to find Klear. The heat and traffic here make leaving home for appointments tough. Having my treatment delivered and doing sessions in my living room has been a game-changer for my depression.&rdquo;
+                  &ldquo;As a Tampa resident, I was thrilled to find Klear<sup>®</sup>. The heat and traffic here make leaving home for appointments tough. Having my treatment delivered and doing sessions in my living room has been a game-changer for my depression.&rdquo;
                 </blockquote>
                 <div className="mt-8">
                   <div className="font-semibold text-[var(--klear-neutral-900)]">Maria S.</div>

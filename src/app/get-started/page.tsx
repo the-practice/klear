@@ -84,7 +84,7 @@ export default function GetStartedPage() {
             <div className="space-y-6">
               <div className="text-center">
                 <h1 className="text-2xl font-bold text-[var(--klear-neutral-900)]">
-                  Let&apos;s see if Klear is right for you
+                  Let&apos;s see if Klear<sup>®</sup> is right for you
                 </h1>
                 <p className="mt-2 text-[var(--klear-neutral-600)]">
                   First, tell us where you&apos;re located.
@@ -117,7 +117,7 @@ export default function GetStartedPage() {
               {formData.state === "other" && (
                 <div className="bg-[var(--klear-accent-50)] rounded-xl p-4 border border-[var(--klear-accent-200)]">
                   <p className="text-sm text-[var(--klear-accent-800)]">
-                    Klear is currently only available in Florida and Washington State. Join our waitlist to be notified when we expand to your area.
+                    Klear<sup>®</sup> is currently only available in Florida and Washington State. Join our waitlist to be notified when we expand to your area.
                   </p>
                 </div>
               )}

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 
 export const metadata: Metadata = {
-  title: "At-Home Ketamine Treatment for Depression | Klear",
+  title: "At-Home Ketamine Treatment for Depression | Klear®",
   description:
     "Experience clinician-guided ketamine therapy from the comfort of your home. FDA-supervised treatment for depression, anxiety, and PTSD. Now available in Florida and Washington State.",
 };
@@ -64,7 +64,7 @@ function HeroSection() {
           <div className="mt-12 lg:mt-0 animate-fade-in-right animate-delay-200">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               <Image
-                src="/transparent.webp"
+                src="/athomehero.webp"
                 alt="Hero: Person relaxing at home during treatment session"
                 width={600}
                 height={600}
@@ -146,7 +146,7 @@ function HowItWorksSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--klear-neutral-900)]">
-            How Klear works
+            How Klear<sup>®</sup> works
           </h2>
           <p className="mt-4 text-lg text-[var(--klear-neutral-600)]">
             A simple, supportive process designed to fit your life
@@ -279,7 +279,7 @@ function BenefitsSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto animate-fade-in-up">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--klear-neutral-900)]">
-            Why choose Klear
+            Why choose Klear<sup>®</sup>
           </h2>
           <p className="mt-4 text-lg text-[var(--klear-neutral-600)]">
             We&apos;ve designed every aspect of our program to support your healing journey
@@ -293,12 +293,34 @@ function BenefitsSection() {
               className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all hover:-translate-y-1 animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <ImagePlaceholder
-                id={benefit.imageId}
-                aspectRatio="video"
-                description={benefit.imageDesc}
-                className="rounded-none"
-              />
+              {benefit.imageId === "1f" ? (
+                <div className="w-full relative aspect-video">
+                  <Image
+                    src="/comfort.webp"
+                    alt={benefit.imageDesc}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              ) : benefit.imageId === "1g" ? (
+                <div className="w-full relative aspect-video">
+                  <Image
+                    src="/licensed.webp"
+                    alt={benefit.imageDesc}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              ) : (
+                <ImagePlaceholder
+                  id={benefit.imageId}
+                  aspectRatio="video"
+                  description={benefit.imageDesc}
+                  className="rounded-none"
+                />
+              )}
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-[var(--klear-neutral-900)]">{benefit.title}</h3>
                 <p className="mt-2 text-[var(--klear-neutral-600)]">{benefit.description}</p>
@@ -315,7 +337,7 @@ function BenefitsSection() {
 function TestimonialsSection() {
   const testimonials = [
     {
-      quote: "After years of trying different medications, Klear finally gave me the breakthrough I needed. I feel like myself again.",
+      quote: "After years of trying different medications, Klear® finally gave me the breakthrough I needed. I feel like myself again.",
       author: "Sarah M.",
       location: "Tampa, FL",
       condition: "Depression",
@@ -345,7 +367,7 @@ function TestimonialsSection() {
             Real stories from real patients
           </h2>
           <p className="mt-4 text-lg text-[var(--klear-neutral-600)]">
-            Hear from people who have transformed their mental health with Klear
+            Hear from people who have transformed their mental health with Klear<sup>®</sup>
           </p>
         </div>
 
@@ -417,8 +439,8 @@ function FAQSection() {
       answer: "Sessions take place in your home. You'll take the prescribed medication sublingually while in a comfortable, relaxed setting. Each session lasts about 2 hours, and you should have a trusted person nearby.",
     },
     {
-      question: "Is Klear available in my state?",
-      answer: "Currently, Klear is available in Florida and Washington State. We're actively working to expand to additional states. Sign up for our newsletter to be notified when we're available in your area.",
+      question: "Is Klear® available in my state?",
+      answer: "Currently, Klear® is available in Florida and Washington State. We're actively working to expand to additional states. Sign up for our newsletter to be notified when we're available in your area.",
     },
     {
       question: "Is ketamine therapy covered by insurance?",
@@ -434,7 +456,7 @@ function FAQSection() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg text-[var(--klear-neutral-600)]">
-            Get answers to common questions about Klear and ketamine therapy
+            Get answers to common questions about Klear<sup>®</sup> and ketamine therapy
           </p>
         </div>
 
@@ -484,7 +506,7 @@ function CTASection() {
           Ready to start your healing journey?
         </h2>
         <p className="mt-4 text-lg text-[var(--klear-primary-100)] animate-fade-in-up animate-delay-100">
-          Take the first step toward lasting relief. Our quick assessment will help determine if Klear is right for you.
+          Take the first step toward lasting relief. Our quick assessment will help determine if Klear<sup>®</sup> is right for you.
         </p>
         <div className="mt-10 animate-fade-in-up animate-delay-200">
           <Link
