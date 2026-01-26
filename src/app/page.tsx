@@ -296,7 +296,7 @@ function BenefitsSection() {
               {benefit.imageId === "1f" ? (
                 <div className="w-full relative aspect-video">
                   <Image
-                    src="/comfort.webp"
+                    src="/athomecomfort.webp"
                     alt={benefit.imageDesc}
                     fill
                     className="object-cover"
@@ -306,7 +306,17 @@ function BenefitsSection() {
               ) : benefit.imageId === "1g" ? (
                 <div className="w-full relative aspect-video">
                   <Image
-                    src="/licensed.webp"
+                    src="/clinician.webp"
+                    alt={benefit.imageDesc}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              ) : benefit.imageId === "1h" ? (
+                <div className="w-full relative aspect-video">
+                  <Image
+                    src="/evidencebased.webp"
                     alt={benefit.imageDesc}
                     fill
                     className="object-cover"
