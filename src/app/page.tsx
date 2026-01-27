@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+import ZipCodeChecker from "@/components/ui/ZipCodeChecker";
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Treatment for Depression | Klear®",
@@ -29,7 +30,12 @@ function HeroSection() {
               Clinician-guided ketamine treatment for depression, anxiety, and PTSD.
               Experience breakthrough relief from the comfort of your home.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animate-delay-300">
+            {/* ZIP Code Checker */}
+            <div className="mt-8 animate-fade-in-up animate-delay-250">
+              <ZipCodeChecker />
+            </div>
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up animate-delay-300">
               <Link
                 href="/get-started"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-[var(--klear-primary-600)] hover:bg-[var(--klear-primary-700)] rounded-full shadow-lg shadow-[var(--klear-primary-600)]/25 transition-all hover:shadow-xl hover:shadow-[var(--klear-primary-600)]/30 hover:-translate-y-0.5"
@@ -46,18 +52,27 @@ function HeroSection() {
                 Learn how it works
               </Link>
             </div>
-            <div className="mt-10 flex items-center justify-center lg:justify-start gap-8 animate-fade-in-up animate-delay-400">
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span className="text-sm text-[var(--klear-neutral-600)]">Licensed clinicians</span>
+            <div className="mt-10 flex flex-col gap-6 animate-fade-in-up animate-delay-400">
+              <div className="inline-flex items-center gap-3 justify-center lg:justify-start">
+                <div className="text-3xl font-bold text-[var(--klear-neutral-900)]">$249</div>
+                <div className="text-left">
+                  <div className="text-sm font-medium text-[var(--klear-neutral-700)]">per session</div>
+                  <div className="text-xs text-[var(--klear-neutral-500)]">HSA/FSA eligible</div>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                </svg>
-                <span className="text-sm text-[var(--klear-neutral-600)]">HSA/FSA eligible</span>
+              <div className="flex items-center justify-center lg:justify-start gap-8">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm text-[var(--klear-neutral-600)]">Licensed clinicians</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm text-[var(--klear-neutral-600)]">Payment plans available</span>
+                </div>
               </div>
             </div>
           </div>
@@ -537,11 +552,147 @@ function CTASection() {
   );
 }
 
+// Pricing Comparison Section
+function PricingComparisonSection() {
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto animate-fade-in-up mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--klear-neutral-900)]">
+            Affordable, transparent pricing
+          </h2>
+          <p className="mt-4 text-lg text-[var(--klear-neutral-600)]">
+            Get the same clinical-grade treatment at a fraction of the cost
+          </p>
+        </div>
+
+        <div className="overflow-hidden rounded-2xl shadow-lg border border-[var(--klear-neutral-200)]">
+          <table className="w-full">
+            <thead className="bg-[var(--klear-primary-50)]">
+              <tr>
+                <th className="px-6 py-4 text-left text-sm font-semibold text-[var(--klear-neutral-900)]">
+                  Treatment Option
+                </th>
+                <th className="px-6 py-4 text-center text-sm font-semibold text-[var(--klear-neutral-900)]">
+                  Cost per Session
+                </th>
+                <th className="px-6 py-4 text-center text-sm font-semibold text-[var(--klear-neutral-900)]">
+                  Convenience
+                </th>
+                <th className="px-6 py-4 text-center text-sm font-semibold text-[var(--klear-neutral-900)]">
+                  Clinician Support
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-white divide-y divide-[var(--klear-neutral-200)]">
+              <tr className="bg-[var(--klear-primary-50)] border-2 border-[var(--klear-primary-600)]">
+                <td className="px-6 py-4">
+                  <div className="flex items-center gap-3">
+                    <div className="flex-shrink-0">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--klear-primary-500)] to-[var(--klear-primary-700)] flex items-center justify-center">
+                        <span className="text-white font-bold text-lg">K</span>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-[var(--klear-neutral-900)]">Klear® At-Home</div>
+                      <div className="text-xs text-[var(--klear-primary-700)] font-medium">Recommended</div>
+                    </div>
+                  </div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <div className="text-2xl font-bold text-[var(--klear-primary-700)]">$249</div>
+                  <div className="text-xs text-[var(--klear-neutral-600)] mt-1">HSA/FSA eligible</div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <svg className="w-6 h-6 text-green-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div className="text-xs text-[var(--klear-neutral-600)] mt-1">At home</div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <svg className="w-6 h-6 text-green-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div className="text-xs text-[var(--klear-neutral-600)] mt-1">Ongoing</div>
+                </td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4">
+                  <div className="font-medium text-[var(--klear-neutral-700)]">In-Office Ketamine Clinic</div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <div className="text-xl font-bold text-[var(--klear-neutral-900)]">$400-800</div>
+                  <div className="text-xs text-[var(--klear-neutral-500)] mt-1">Not covered</div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <svg className="w-6 h-6 text-red-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                  </svg>
+                  <div className="text-xs text-[var(--klear-neutral-600)] mt-1">Travel required</div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <svg className="w-6 h-6 text-yellow-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
+                  </svg>
+                  <div className="text-xs text-[var(--klear-neutral-600)] mt-1">Session only</div>
+                </td>
+              </tr>
+              <tr className="bg-[var(--klear-neutral-50)]">
+                <td className="px-6 py-4">
+                  <div className="font-medium text-[var(--klear-neutral-700)]">Traditional Psychiatry</div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <div className="text-xl font-bold text-[var(--klear-neutral-900)]">$200-400</div>
+                  <div className="text-xs text-[var(--klear-neutral-500)] mt-1">Per visit</div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <svg className="w-6 h-6 text-yellow-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
+                  </svg>
+                  <div className="text-xs text-[var(--klear-neutral-600)] mt-1">Office visits</div>
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <svg className="w-6 h-6 text-green-600 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div className="text-xs text-[var(--klear-neutral-600)] mt-1">Ongoing</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex items-center gap-2 text-[var(--klear-neutral-600)]">
+            <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            <span className="text-sm">HSA/FSA accepted</span>
+          </div>
+          <div className="flex items-center gap-2 text-[var(--klear-neutral-600)]">
+            <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            <span className="text-sm">Flexible payment plans</span>
+          </div>
+          <div className="flex items-center gap-2 text-[var(--klear-neutral-600)]">
+            <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            <span className="text-sm">No hidden fees</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <>
       <HeroSection />
       <StatsSection />
+      <PricingComparisonSection />
       <HowItWorksSection />
       <BenefitsSection />
       <TestimonialsSection />

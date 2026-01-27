@@ -64,6 +64,22 @@ export default function GetStartedPage() {
       </div>
 
       <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+        {/* Crisis Support Banner */}
+        <div className="mb-8 animate-fade-in">
+          <div className="bg-gradient-to-br from-red-900 to-red-800 text-white rounded-lg p-4 border-2 border-red-600">
+            <div className="flex items-center gap-3">
+              <svg className="w-5 h-5 text-red-200 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+              </svg>
+              <div className="flex-1">
+                <p className="text-sm font-medium">
+                  Not feeling safe? <a href="tel:988" className="underline font-bold hover:text-red-100">Call 988</a> or <a href="tel:911" className="underline font-bold hover:text-red-100">911</a> for immediate support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Progress Bar */}
         <div className="mb-12 animate-fade-in">
           <div className="flex items-center justify-between mb-2">
