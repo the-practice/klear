@@ -52,27 +52,18 @@ function HeroSection() {
                 Learn how it works
               </Link>
             </div>
-            <div className="mt-10 flex flex-col gap-6 animate-fade-in-up animate-delay-400">
-              <div className="inline-flex items-center gap-3 justify-center lg:justify-start">
-                <div className="text-3xl font-bold text-[var(--klear-neutral-900)]">$249</div>
-                <div className="text-left">
-                  <div className="text-sm font-medium text-[var(--klear-neutral-700)]">per session</div>
-                  <div className="text-xs text-[var(--klear-neutral-500)]">HSA/FSA eligible</div>
-                </div>
+            <div className="mt-10 flex items-center justify-center lg:justify-start gap-8 animate-fade-in-up animate-delay-400">
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm text-[var(--klear-neutral-600)]">Licensed clinicians</span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start gap-8">
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm text-[var(--klear-neutral-600)]">Licensed clinicians</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm text-[var(--klear-neutral-600)]">Payment plans available</span>
-                </div>
+              <div className="flex items-center gap-2">
+                <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                <span className="text-sm text-[var(--klear-neutral-600)]">HSA/FSA eligible</span>
               </div>
             </div>
           </div>
