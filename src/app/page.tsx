@@ -329,6 +329,36 @@ function BenefitsSection() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
+              ) : benefit.imageId === "1i" ? (
+                <div className="w-full relative aspect-video">
+                  <Image
+                    src="/support.avif"
+                    alt={benefit.imageDesc}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              ) : benefit.imageId === "1j" ? (
+                <div className="w-full relative aspect-video">
+                  <Image
+                    src="/save.webp"
+                    alt={benefit.imageDesc}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+              ) : benefit.imageId === "1k" ? (
+                <div className="w-full relative aspect-video">
+                  <Image
+                    src="/personalized3.webp"
+                    alt={benefit.imageDesc}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
               ) : (
                 <ImagePlaceholder
                   id={benefit.imageId}
