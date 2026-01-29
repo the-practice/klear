@@ -132,58 +132,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Crisis Resources */}
-        <div className="mt-12 border-t border-[var(--klear-neutral-800)] pt-8">
-          <div className="rounded-lg bg-gradient-to-br from-red-900 to-red-800 p-6 border-2 border-red-600">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <svg className="w-8 h-8 text-red-200" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <div className="flex-1">
-                <h4 className="text-lg font-bold text-white mb-3">In Crisis? Get Immediate Help</h4>
-                <div className="space-y-3">
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                    <span className="text-red-100 font-medium">Mental Health Emergency:</span>
-                    <a 
-                      href="tel:988" 
-                      className="inline-flex items-center gap-2 text-xl font-bold text-white hover:text-red-100 transition-colors"
-                    >
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
-                      Call 988
-                    </a>
-                    <span className="text-sm text-red-200">(Suicide & Crisis Lifeline)</span>
-                  </div>
-                  <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                    <span className="text-red-100 font-medium">Medical Emergency:</span>
-                    <a 
-                      href="tel:911" 
-                      className="inline-flex items-center gap-2 text-xl font-bold text-white hover:text-red-100 transition-colors"
-                    >
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
-                      Call 911
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-red-200">
-                    <span>Crisis Text Line:</span>
-                    <span className="font-semibold text-white">Text "HELLO" to 741741</span>
-                  </div>
-                </div>
-                <p className="mt-4 text-sm text-red-100 leading-relaxed">
-                  If you're experiencing a mental health emergency or having thoughts of self-harm, please reach out immediately. These resources are available 24/7 and are completely confidential.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Safety Information */}
-        <div className="mt-8">
+        <div className="mt-12 border-t border-[var(--klear-neutral-800)] pt-8">
           <div className="rounded-lg bg-[var(--klear-neutral-800)] p-4">
             <h4 className="text-sm font-semibold text-white mb-2">Important Safety Information</h4>
             <p className="text-xs text-[var(--klear-neutral-400)] leading-relaxed">
