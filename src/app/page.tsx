@@ -537,13 +537,14 @@ function FAQSection() {
 function CTASection() {
   return (
     <section className="py-20 lg:py-28 bg-gradient-to-br from-[var(--klear-primary-600)] to-[var(--klear-primary-800)] relative overflow-hidden">
-      {/* Background Image Placeholder */}
-      <div className="absolute inset-0 opacity-10">
-        <ImagePlaceholder
-          id="1o"
-          aspectRatio="wide"
-          description="Abstract calming pattern or nature scene"
-          className="w-full h-full rounded-none border-none"
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-20">
+        <Image
+          src="/naturescene.webp"
+          alt="Calming nature scene background"
+          fill
+          className="object-cover"
+          sizes="100vw"
         />
       </div>
 
