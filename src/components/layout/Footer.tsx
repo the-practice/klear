@@ -135,7 +135,7 @@ export default function Footer() {
         {/* Safety Information */}
         <div className="mt-12 border-t border-[var(--klear-neutral-800)] pt-8">
           <div className="rounded-lg bg-[var(--klear-neutral-800)] p-4">
-            <h4 className="text-sm font-semibold text-white mb-2">Important Safety Information</h4>
+            <h4 className="text-sm font-semibold text-red-500 mb-2">Important Safety Information</h4>
             <p className="text-xs text-[var(--klear-neutral-400)] leading-relaxed">
               Ketamine is a controlled substance. Klear<sup>®</sup> provides ketamine therapy under the supervision of licensed
               clinicians for adults with treatment-resistant depression, anxiety, or PTSD. Not everyone is a candidate
