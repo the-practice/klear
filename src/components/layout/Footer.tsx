@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 const footerNavigation = {
   program: [
@@ -20,6 +23,18 @@ const footerNavigation = {
     { name: "Florida", href: "/florida" },
     { name: "Washington State", href: "/washington" },
   ],
+  floridaCities: [
+    { name: "Tampa", href: "/ketamine-treatment-tampa-florida" },
+    { name: "Miami", href: "/ketamine-treatment-miami-florida" },
+    { name: "Orlando", href: "/ketamine-treatment-orlando-florida" },
+    { name: "Jacksonville", href: "/ketamine-treatment-jacksonville-florida" },
+    { name: "St. Petersburg", href: "/ketamine-treatment-st-petersburg-florida" },
+    { name: "Tallahassee", href: "/ketamine-treatment-tallahassee-florida" },
+    { name: "Fort Lauderdale", href: "/ketamine-treatment-fort-lauderdale-florida" },
+    { name: "Hialeah", href: "/ketamine-treatment-hialeah-florida" },
+    { name: "Cape Coral", href: "/ketamine-treatment-cape-coral-florida" },
+    { name: "Port St. Lucie", href: "/ketamine-treatment-port-st-lucie-florida" },
+  ],
   company: [
     { name: "About Us", href: "/about" },
     { name: "Reviews", href: "/reviews" },
@@ -34,6 +49,8 @@ const footerNavigation = {
 };
 
 export default function Footer() {
+  const [showFloridaCities, setShowFloridaCities] = useState(false);
+
   return (
     <footer className="bg-[var(--klear-neutral-900)]" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -107,13 +124,43 @@ export default function Footer() {
               <div>
                 <h3 className="text-sm font-semibold text-white">Locations</h3>
                 <ul role="list" className="mt-4 space-y-3">
-                  {footerNavigation.locations.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-sm text-[var(--klear-neutral-400)] hover:text-[var(--klear-primary-400)]">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
+                  <li>
+                    <div className="relative">
+                      <button
+                        onClick={() => setShowFloridaCities(!showFloridaCities)}
+                        className="flex items-center gap-1 text-sm text-[var(--klear-neutral-400)] hover:text-[var(--klear-primary-400)] transition-colors"
+                      >
+                        Florida
+                        <svg
+                          className={`w-4 h-4 transition-transform ${showFloridaCities ? 'rotate-180' : ''}`}
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                      {showFloridaCities && (
+                        <ul className="mt-2 ml-4 space-y-2 border-l border-[var(--klear-neutral-700)] pl-3">
+                          {footerNavigation.floridaCities.map((city) => (
+                            <li key={city.name}>
+                              <Link
+                                href={city.href}
+                                className="text-xs text-[var(--klear-neutral-500)] hover:text-[var(--klear-primary-400)] transition-colors"
+                              >
+                                {city.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </li>
+                  <li>
+                    <Link href="/washington" className="text-sm text-[var(--klear-neutral-400)] hover:text-[var(--klear-primary-400)]">
+                      Washington State
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
