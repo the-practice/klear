@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { FloridaCityData } from "@/data/florida-cities";
 
@@ -154,13 +155,26 @@ export function CityLandingPage({ city }: CityLandingPageProps) {
       </section>
 
       {/* Scenic Banner Image */}
-      <section className="relative">
-        <ImagePlaceholder
-          id={`banner-${city.slug}`}
-          aspectRatio="wide"
-          description={`${name} scenic view - Florida landscape or comfortable home setting`}
-          className="w-full rounded-none border-0"
-        />
+      <section className="relative w-full">
+        {city.slug === 'tampa' ? (
+          <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
+            <Image
+              src="/tampa.webp"
+              alt={`${name} scenic view - Florida landscape`}
+              fill
+              className="object-cover"
+              sizes="100vw"
+              priority
+            />
+          </div>
+        ) : (
+          <ImagePlaceholder
+            id={`banner-${city.slug}`}
+            aspectRatio="wide"
+            description={`${name} scenic view - Florida landscape or comfortable home setting`}
+            className="w-full rounded-none border-0"
+          />
+        )}
       </section>
 
       {/* Local Context Section - CRITICAL FOR SEO */}
@@ -324,12 +338,24 @@ export function CityLandingPage({ city }: CityLandingPageProps) {
               </ul>
             </div>
             <div className="animate-fade-in-right opacity-0" style={{ animationFillMode: 'forwards' }}>
-              <ImagePlaceholder
-                id={`team-${city.slug}`}
-                aspectRatio="square"
-                description="Medical team - compassionate healthcare providers"
-                className="w-full rounded-2xl"
-              />
+              {city.slug === 'tampa' ? (
+                <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
+                  <Image
+                    src="/doctors.webp"
+                    alt="Medical team - compassionate healthcare providers"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              ) : (
+                <ImagePlaceholder
+                  id={`team-${city.slug}`}
+                  aspectRatio="square"
+                  description="Medical team - compassionate healthcare providers"
+                  className="w-full rounded-2xl"
+                />
+              )}
             </div>
           </div>
         </div>
