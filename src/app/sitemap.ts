@@ -3,6 +3,27 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://kleartreatment.com";
 
+  // Tier 1 Florida cities
+  const floridaCities = [
+    "jacksonville",
+    "miami",
+    "tampa",
+    "orlando",
+    "st-petersburg",
+    "fort-lauderdale",
+    "hialeah",
+    "port-st-lucie",
+    "cape-coral",
+    "tallahassee",
+  ];
+
+  const cityPages = floridaCities.map((city) => ({
+    url: `${baseUrl}/ketamine-treatment-${city}-florida`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
   return [
     {
       url: baseUrl,
@@ -52,5 +73,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    ...cityPages,
   ];
 }
