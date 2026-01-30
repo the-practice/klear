@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 
 type Step = 1 | 2 | 3 | 4;
@@ -189,11 +190,12 @@ export default function GetStartedPage() {
                 </p>
               </div>
 
-              <ImagePlaceholder
-                id="6d"
-                aspectRatio="video"
-                description="Mental wellness illustration"
-                className="w-full"
+              <Image
+                src="/mentalwellness.webp"
+                alt="Mental wellness illustration"
+                width={1920}
+                height={1080}
+                className="w-full rounded-lg"
               />
 
               <div className="space-y-3">
