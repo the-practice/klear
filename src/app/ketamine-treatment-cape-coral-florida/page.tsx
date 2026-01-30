@@ -5,7 +5,7 @@ import { floridaCities } from "@/data/florida-cities";
 
 export const metadata: Metadata = {
   title: "Ketamine Treatment in Cape Coral, FL | At-Home Therapy | Klear",
-  description: "Get FDA-approved ketamine treatment in Cape Coral, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Serving Lee County and Southwest Florida.",
+  description: "Get effective ketamine treatment in Cape Coral, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Serving Lee County and Southwest Florida.",
   keywords: [
     "ketamine treatment Cape Coral",
     "ketamine therapy Cape Coral",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "At-Home Ketamine Treatment in Cape Coral, FL | Klear",
-    description: "Get FDA-approved ketamine treatment in Cape Coral from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD.",
+    description: "Get effective ketamine treatment in Cape Coral from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD.",
     type: "website",
   },
 };

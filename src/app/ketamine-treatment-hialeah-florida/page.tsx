@@ -5,7 +5,7 @@ import { floridaCities } from "@/data/florida-cities";
 
 export const metadata: Metadata = {
   title: "Ketamine Treatment in Hialeah, FL | At-Home Therapy | Klear",
-  description: "Get FDA-approved ketamine treatment in Hialeah, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Servicios en español. Serving Miami-Dade County.",
+  description: "Get effective ketamine treatment in Hialeah, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Servicios en español. Serving Miami-Dade County.",
   keywords: [
     "ketamine treatment Hialeah",
     "ketamine therapy Hialeah",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "At-Home Ketamine Treatment in Hialeah, FL | Klear",
-    description: "Get FDA-approved ketamine treatment in Hialeah from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD. Servicios en español.",
+    description: "Get effective ketamine treatment in Hialeah from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD. Servicios en español.",
     type: "website",
   },
 };

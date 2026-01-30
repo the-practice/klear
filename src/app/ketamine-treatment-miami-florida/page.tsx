@@ -5,7 +5,7 @@ import { floridaCities } from "@/data/florida-cities";
 
 export const metadata: Metadata = {
   title: "Ketamine Treatment in Miami, FL | At-Home Therapy | Klear",
-  description: "Get FDA-approved ketamine treatment in Miami, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Serving Miami-Dade County and surrounding areas.",
+  description: "Get effective ketamine treatment in Miami, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Serving Miami-Dade County and surrounding areas.",
   keywords: [
     "ketamine treatment Miami",
     "ketamine therapy Miami",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "At-Home Ketamine Treatment in Miami, FL | Klear",
-    description: "Get FDA-approved ketamine treatment in Miami from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD.",
+    description: "Get effective ketamine treatment in Miami from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD.",
     type: "website",
   },
 };

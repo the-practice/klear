@@ -5,7 +5,7 @@ import { floridaCities } from "@/data/florida-cities";
 
 export const metadata: Metadata = {
   title: "Ketamine Treatment in Orlando, FL | At-Home Therapy | Klear",
-  description: "Get FDA-approved ketamine treatment in Orlando, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Serving Orange County and surrounding areas.",
+  description: "Get effective ketamine treatment in Orlando, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Serving Orange County and surrounding areas.",
   keywords: [
     "ketamine treatment Orlando",
     "ketamine therapy Orlando",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "At-Home Ketamine Treatment in Orlando, FL | Klear",
-    description: "Get FDA-approved ketamine treatment in Orlando from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD.",
+    description: "Get effective ketamine treatment in Orlando from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD.",
     type: "website",
   },
 };

@@ -5,7 +5,7 @@ import { floridaCities } from "@/data/florida-cities";
 
 export const metadata: Metadata = {
   title: "Ketamine Treatment in Tampa, FL | At-Home Therapy | Klear",
-  description: "Get FDA-approved ketamine treatment in Tampa, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Serving Hillsborough County and surrounding areas.",
+  description: "Get effective ketamine treatment in Tampa, Florida from licensed psychiatric providers. At-home therapy with medical supervision. Serving Hillsborough County and surrounding areas.",
   keywords: [
     "ketamine treatment Tampa",
     "ketamine therapy Tampa",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "At-Home Ketamine Treatment in Tampa, FL | Klear",
-    description: "Get FDA-approved ketamine treatment in Tampa from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD.",
+    description: "Get effective ketamine treatment in Tampa from licensed psychiatric providers. At-home therapy for depression, anxiety, PTSD.",
     type: "website",
   },
 };

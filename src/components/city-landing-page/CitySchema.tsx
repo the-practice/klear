@@ -24,7 +24,7 @@ export function CitySchema({ city, url }: CitySchemaProps) {
     availableService: {
       "@type": "MedicalTherapy",
       name: "Ketamine Therapy",
-      description: "FDA-approved ketamine treatment for depression and anxiety"
+      description: "Effective ketamine treatment for depression and anxiety"
     }
   };
 

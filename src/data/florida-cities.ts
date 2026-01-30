@@ -25,7 +25,7 @@ export const floridaCities: Record<string, FloridaCityData> = {
 
 With Jacksonville's large military community and active-duty population, we understand the unique challenges veterans face when seeking mental health treatment. Our providers have experience working with service members and understand PTSD treatment needs specific to military personnel.
 
-No need to drive across town in Jacksonville traffic or navigate the bridges connecting our sprawling city. We bring FDA-approved ketamine therapy directly to your door, whether you're near NAS Jax, in the Southside, or out at the beaches.`,
+No need to drive across town in Jacksonville traffic or navigate the bridges connecting our sprawling city. We bring effective ketamine therapy directly to your door, whether you're near NAS Jax, in the Southside, or out at the beaches.`,
     demographicNote: "Home to a large veteran and military population",
     nearbyCities: ["St. Augustine", "Gainesville", "Daytona Beach"],
     testimonial: {
@@ -40,10 +40,10 @@ No need to drive across town in Jacksonville traffic or navigate the bridges con
     name: "Miami",
     county: "Miami-Dade County",
     neighborhoods: ["South Beach", "Coral Gables", "Coconut Grove", "Brickell", "Key Biscayne", "Pinecrest", "Doral", "Kendall"],
-    subheadline: "FDA-approved ketamine therapy for Miami area patients",
+    subheadline: "Effective ketamine therapy for Miami area patients",
     localContext: `Proudly serving Miami-Dade County from South Beach to Kendall, Coral Gables to Doral, and all greater Miami neighborhoods. Miami's vibrant culture and fast-paced lifestyle come with unique stressors—from the pressures of our international business hub to the emotional toll of hurricane seasons. Our at-home ketamine program offers relief without navigating Miami's notorious traffic or finding parking in Brickell or South Beach.
 
-Many Miami residents previously had limited options for ketamine therapy, with only a handful of clinics spread across our sprawling metro area. Now you can receive the same FDA-approved treatment from the comfort of your home, whether you're in a high-rise in Downtown Miami or a single-family home in the suburbs.
+Many Miami residents previously had limited options for ketamine therapy, with only a handful of clinics spread across our sprawling metro area. Now you can receive the same effective treatment from the comfort of your home, whether you're in a high-rise in Downtown Miami or a single-family home in the suburbs.
 
 Our bilingual team understands Miami's diverse community. We provide culturally competent care in English and Spanish, ensuring you feel comfortable discussing your mental health journey in your preferred language.`,
     demographicNote: "Diverse multicultural community with large Hispanic and Latinx population",
@@ -61,7 +61,7 @@ Our bilingual team understands Miami's diverse community. We provide culturally 
     county: "Hillsborough County",
     neighborhoods: ["South Tampa", "Westchase", "Brandon", "Carrollwood", "Temple Terrace", "Hyde Park", "Davis Islands"],
     subheadline: "Skip the clinic. Get treatment in your Tampa residence",
-    localContext: `We proudly serve patients throughout Hillsborough County, including South Tampa, Westchase, Brandon, Carrollwood, and the Temple Terrace area. Tampa Bay residents face unique mental health challenges—from the pressures of our growing tech sector to the stress of hurricane seasons. With limited ketamine clinics in the Tampa area, many patients previously faced long drives to receive treatment. Now you can receive the same FDA-approved therapy from the comfort of your Tampa home.
+    localContext: `We proudly serve patients throughout Hillsborough County, including South Tampa, Westchase, Brandon, Carrollwood, and the Temple Terrace area. Tampa Bay residents face unique mental health challenges—from the pressures of our growing tech sector to the stress of hurricane seasons. With limited ketamine clinics in the Tampa area, many patients previously faced long drives to receive treatment. Now you can receive the same effective therapy from the comfort of your Tampa home.
 
 Tampa's rapid growth has brought opportunity but also increased stress, anxiety, and depression. Our providers understand the pressures facing Tampa Bay professionals, healthcare workers, and entrepreneurs. We offer flexible scheduling that works around your busy life, not traditional clinic hours.
 
@@ -85,7 +85,7 @@ Skip the drive across the Howard Frankland Bridge or the traffic on the Selmon E
 
 Many Orlando residents working in the hospitality and entertainment industries face burnout, depression, and anxiety at higher rates. Our providers understand these unique stressors and offer treatment plans tailored to your situation. Whether you're a Disney or Universal employee, a healthcare professional at one of our major hospitals, or work in Orlando's growing tech scene, we're here to help.
 
-From the Lake Nona medical community to the suburbs of Seminole County, we bring FDA-approved ketamine therapy to your door. No need to fight tourist traffic on I-Drive or navigate construction on our ever-growing highways.`,
+From the Lake Nona medical community to the suburbs of Seminole County, we bring effective ketamine therapy to your door. No need to fight tourist traffic on I-Drive or navigate construction on our ever-growing highways.`,
     demographicNote: "Large service industry and tourism workforce",
     nearbyCities: ["Daytona Beach", "Melbourne", "Lakeland"],
     testimonial: {
@@ -100,7 +100,7 @@ From the Lake Nona medical community to the suburbs of Seminole County, we bring
     name: "St. Petersburg",
     county: "Pinellas County",
     neighborhoods: ["Downtown St. Pete", "Snell Isle", "Historic Old Northeast", "Tyrone", "Gulfport", "Madeira Beach", "Treasure Island"],
-    subheadline: "FDA-approved ketamine therapy for St. Petersburg area patients",
+    subheadline: "Effective ketamine therapy for St. Petersburg area patients",
     localContext: `Serving St. Petersburg and all of Pinellas County, from Downtown St. Pete and the Historic Old Northeast to Treasure Island, Madeira Beach, and Gulfport. St. Pete's revitalization has brought growth and opportunity, but also the stress of rapid change in a close-knit community. Our at-home ketamine program allows you to focus on healing without crossing the bridge to Tampa or navigating beach traffic.
 
 St. Petersburg's active arts community, growing tech scene, and beautiful waterfront lifestyle attract many residents—but depression and anxiety don't discriminate based on zip code. Whether you're a young professional in the burgeoning downtown tech corridor, an artist in the Warehouse Arts District, or enjoying retirement along the Gulf, we provide personalized ketamine therapy in your own space.
@@ -123,7 +123,7 @@ Our providers understand St. Pete's unique culture—the blend of creativity, ou
     subheadline: "Skip the clinic. Get treatment in your Fort Lauderdale residence",
     localContext: `Serving Fort Lauderdale and Broward County from Victoria Park and Rio Vista to Harbor Beach, Las Olas, and surrounding communities. As the heart of the Gold Coast, Fort Lauderdale residents enjoy a beautiful coastal lifestyle—but the pressures of our tourism-driven economy, hurricane seasons, and rapid growth can take a toll on mental health.
 
-Many Fort Lauderdale residents previously had to travel to Miami for ketamine therapy, or face limited local options. Our at-home program brings FDA-approved treatment directly to you, whether you're in a waterfront home in Harbor Beach, a condo in Victoria Park, or anywhere in greater Broward County.
+Many Fort Lauderdale residents previously had to travel to Miami for ketamine therapy, or face limited local options. Our at-home program brings effective treatment directly to you, whether you're in a waterfront home in Harbor Beach, a condo in Victoria Park, or anywhere in greater Broward County.
 
 Fort Lauderdale's boating community, yachting industry, and seasonal residents face unique challenges—from the stress of high-pressure careers to the isolation that can come with wealth. Our providers offer confidential, discreet treatment that respects your privacy and helps you reclaim your wellbeing without anyone knowing unless you choose to tell them.`,
     demographicNote: "Large boating and marine industry community",
@@ -145,7 +145,7 @@ Fort Lauderdale's boating community, yachting industry, and seasonal residents f
 
 Our bilingual team provides ketamine therapy with full Spanish language support, ensuring you can discuss your symptoms, fears, and hopes in the language you're most comfortable with. No translation needed, no cultural barriers—just direct, understanding communication about your mental health.
 
-Many Hialeah residents previously faced a choice between driving into Miami for treatment or going without. Now you can receive the same FDA-approved ketamine therapy at home, surrounded by family and in a familiar environment. We respect the importance of family and community in Hispanic culture and welcome support systems into your treatment journey.
+Many Hialeah residents previously faced a choice between driving into Miami for treatment or going without. Now you can receive the same effective ketamine therapy at home, surrounded by family and in a familiar environment. We respect the importance of family and community in Hispanic culture and welcome support systems into your treatment journey.
 
 From the industrial areas of Medley to the residential streets of Hialeah Gardens, we bring quality psychiatric care to your door without the need to navigate Palmetto Expressway traffic or find parking in Miami.`,
     demographicNote: "Predominantly Hispanic/Latinx community with strong family values",
@@ -162,12 +162,12 @@ From the industrial areas of Medley to the residential streets of Hialeah Garden
     name: "Port St. Lucie",
     county: "St. Lucie County",
     neighborhoods: ["Tradition", "St. Lucie West", "River Park", "Fort Pierce", "Jensen Beach", "Vero Beach"],
-    subheadline: "FDA-approved ketamine therapy for Port St. Lucie area patients",
+    subheadline: "Effective ketamine therapy for Port St. Lucie area patients",
     localContext: `Serving Port St. Lucie and the Treasure Coast, including Tradition, St. Lucie West, River Park, Fort Pierce, and nearby Jensen Beach and Vero Beach. As one of Florida's fastest-growing cities, Port St. Lucie has attracted many families and retirees seeking a slower pace—but quality mental health care has often required traveling south to Palm Beach County or even Miami.
 
 The Treasure Coast's relaxed lifestyle doesn't make residents immune to depression, anxiety, and PTSD. In fact, many retirees dealing with life transitions, veterans in our large military community, and families facing the pressures of modern life find themselves needing help. Our at-home ketamine program brings treatment to you, without the long drive on I-95 or Florida's Turnpike.
 
-Whether you're in the master-planned community of Tradition, established neighborhoods in St. Lucie West, or anywhere in between, we deliver FDA-approved ketamine therapy to your door. No need to fight rush hour traffic heading south or spend hours in the car for treatment sessions.`,
+Whether you're in the master-planned community of Tradition, established neighborhoods in St. Lucie West, or anywhere in between, we deliver effective ketamine therapy to your door. No need to fight rush hour traffic heading south or spend hours in the car for treatment sessions.`,
     demographicNote: "Large retiree population and growing family communities",
     nearbyCities: ["Vero Beach", "Fort Pierce", "Jupiter"],
     testimonial: {
@@ -187,7 +187,7 @@ Whether you're in the master-planned community of Tradition, established neighbo
 
 Southwest Florida's seasonal population, large retiree community, and service-industry workforce all face unique mental health challenges. Our providers understand the specific stressors of living in paradise—from hurricane anxiety to the isolation that can come with seasonal living. We offer ketamine therapy that fits your real life, whether you're here year-round or part-time.
 
-Many Cape Coral residents previously had limited options for specialized mental health treatment, with most ketamine clinics located in Naples or Sarasota. Now you can access the same FDA-approved therapy at home, whether you're on a canal in SE Cape Coral, near the waterfront in Southwest Cape, or anywhere in our sprawling city.
+Many Cape Coral residents previously had limited options for specialized mental health treatment, with most ketamine clinics located in Naples or Sarasota. Now you can access the same effective therapy at home, whether you're on a canal in SE Cape Coral, near the waterfront in Southwest Cape, or anywhere in our sprawling city.
 
 Skip the bridge traffic to Fort Myers and enjoy your treatment sessions in the comfort of your own home. We're here to help you reclaim your wellbeing and get back to enjoying the Southwest Florida lifestyle.`,
     demographicNote: "Large seasonal population and retiree community",
@@ -209,7 +209,7 @@ Skip the bridge traffic to Fort Myers and enjoy your treatment sessions in the c
 
 With a large student population facing academic pressures, state workers navigating high-stress careers, and a community that values privacy, Tallahassee residents often struggle to find convenient mental health care. Our at-home ketamine program eliminates the need to explain where you're going or run into constituents, students, or colleagues in waiting rooms.
 
-For many in North Florida and the Big Bend region, access to specialized mental health treatment has meant traveling to Jacksonville, Gainesville, or even out of state. Now you can receive FDA-approved ketamine therapy at home in Tallahassee, whether you're a student near FSU or FAMU, working near the Capitol, or enjoying life in Killearn Estates.
+For many in North Florida and the Big Bend region, access to specialized mental health treatment has meant traveling to Jacksonville, Gainesville, or even out of state. Now you can receive effective ketamine therapy at home in Tallahassee, whether you're a student near FSU or FAMU, working near the Capitol, or enjoying life in Killearn Estates.
 
 Our providers understand the unique culture of Tallahassee—from the academic calendar rhythms to the legislative session pressures. We offer flexible scheduling that works around exams, session, and your actual life—not 9-to-5 clinic hours.`,
     demographicNote: "Large university student population and government workers",
