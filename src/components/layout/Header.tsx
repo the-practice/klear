@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navigation = [
@@ -20,12 +21,14 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--klear-primary-500)] to-[var(--klear-primary-700)] flex items-center justify-center">
-                <span className="text-white font-bold text-lg">K</span>
-              </div>
-              <span className="text-xl font-semibold text-[var(--klear-neutral-900)]">
-                Klear<sup>®</sup>
-              </span>
+              <Image
+                src="/kleerlogo2026.svg"
+                alt="Klear Logo"
+                width={120}
+                height={32}
+                className="h-8 w-auto"
+                priority
+              />
             </Link>
           </div>
 

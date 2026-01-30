@@ -153,11 +153,12 @@ export default function GetStartedPage() {
                 </p>
               </div>
 
-              <ImagePlaceholder
-                id="6c"
-                aspectRatio="video"
-                description="Diverse age group of adults"
-                className="w-full"
+              <Image
+                src="/adults.webp"
+                alt="Diverse age group of adults"
+                width={1920}
+                height={1080}
+                className="w-full rounded-lg"
               />
 
               <div className="grid grid-cols-2 gap-3">
