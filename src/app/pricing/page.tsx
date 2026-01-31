@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+import { TextEffect } from "@/components/ui/text-effect";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -78,9 +79,14 @@ export default function PricingPage() {
         </div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <h1 className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]">
+            <TextEffect
+              as="h1"
+              per="word"
+              preset="fade"
+              className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]"
+            >
               Transparent, affordable pricing
-            </h1>
+            </TextEffect>
             <p className="mt-6 text-lg text-[var(--klear-neutral-600)]">
               Quality mental health care shouldn&apos;t break the bank. Our programs are designed to be accessible with flexible payment options.
             </p>

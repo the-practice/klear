@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { TextEffect } from "@/components/ui/text-effect";
 
 export const metadata: Metadata = {
   title: "Coming Soon | At-Home Ketamine Treatment",
@@ -28,8 +29,17 @@ export default function ComingSoonPage() {
 
         {/* Main Headline */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[var(--klear-neutral-900)] mb-6 animate-fade-in-up">
-          Healing is about to get a
-          <span className="text-gradient block mt-2">whole lot closer to home</span>
+          <TextEffect as="span" per="word" preset="fade" className="block">
+            Healing is about to get a
+          </TextEffect>
+          <TextEffect
+            as="span"
+            per="word"
+            preset="fade"
+            className="text-gradient block mt-2"
+          >
+            whole lot closer to home
+          </TextEffect>
         </h1>
 
         {/* Subheadline */}
