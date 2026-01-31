@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
-import { TextEffect } from "@/components/ui/text-effect";
 import { FloridaCityData } from "@/data/florida-cities";
 
 interface CityLandingPageProps {
@@ -137,14 +136,9 @@ export function CityLandingPage({ city }: CityLandingPageProps) {
               </svg>
               <span className="text-sm font-medium text-[var(--klear-primary-700)]">Serving {name}, Florida</span>
             </div>
-            <TextEffect
-              as="h1"
-              per="word"
-              preset="fade"
-              className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]"
-            >
-              {`Ketamine Treatment for ${name}, Florida Residents`}
-            </TextEffect>
+            <h1 className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]">
+              Ketamine Treatment for {name}, Florida Residents
+            </h1>
             <p className="mt-6 text-lg text-[var(--klear-neutral-600)]">
               {subheadline}
             </p>

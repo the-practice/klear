@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
-import { TextEffect } from "@/components/ui/text-effect";
 
 export const metadata: Metadata = {
   title: "Ketamine Treatment in Washington State | At-Home Therapy",
@@ -59,14 +58,9 @@ export default function WashingtonPage() {
               </svg>
               <span className="text-sm font-medium text-[var(--klear-primary-700)]">Now serving all of Washington State</span>
             </div>
-            <TextEffect
-              as="h1"
-              per="word"
-              preset="fade"
-              className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]"
-            >
+            <h1 className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]">
               At-home ketamine treatment in Washington
-            </TextEffect>
+            </h1>
             <p className="mt-6 text-lg text-[var(--klear-neutral-600)]">
               Experience clinician-guided ketamine therapy for depression, anxiety, and PTSD from the comfort of your Washington home. Licensed Washington clinicians, discreet delivery statewide.
             </p>

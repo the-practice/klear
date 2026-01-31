@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
-import { TextEffect } from "@/components/ui/text-effect";
 
 export const metadata: Metadata = {
   title: "How It Works",
@@ -98,14 +97,9 @@ export default function HowItWorksPage() {
         </div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <TextEffect
-              as="h1"
-              per="word"
-              preset="fade"
-              className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]"
-            >
+            <h1 className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]">
               Your path to healing, step by step
-            </TextEffect>
+            </h1>
             <p className="mt-6 text-lg text-[var(--klear-neutral-600)]">
               We&apos;ve designed a simple, supportive process that fits your life. From your first assessment to ongoing care, we&apos;re with you every step of the way.
             </p>

@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
-import { TextEffect } from "@/components/ui/text-effect";
 
 export const metadata: Metadata = {
   title: "Patient Reviews & Testimonials",
@@ -97,14 +96,9 @@ export default function ReviewsPage() {
         </div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <TextEffect
-              as="h1"
-              per="word"
-              preset="fade"
-              className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]"
-            >
+            <h1 className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]">
               Hear from our patients
-            </TextEffect>
+            </h1>
             <p className="mt-6 text-lg text-[var(--klear-neutral-600)]">
               Real stories from people who have experienced the transformative power of ketamine therapy with Klear<sup>®</sup>.
             </p>

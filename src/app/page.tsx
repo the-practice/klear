@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
-import { TextEffect } from "@/components/ui/text-effect";
 import ZipCodeChecker from "@/components/ui/ZipCodeChecker";
 
 export const metadata: Metadata = {
@@ -24,14 +23,9 @@ function HeroSection() {
                 Now available in Florida & Washington
               </span>
             </div>
-            <TextEffect
-              as="h1"
-              per="word"
-              preset="fade"
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[var(--klear-neutral-900)] animate-fade-in-up animate-delay-100"
-            >
-              Find clarity with at-home ketamine therapy
-            </TextEffect>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[var(--klear-neutral-900)] animate-fade-in-up animate-delay-100">
+              Find <span className="text-gradient">clarity</span> with at-home ketamine therapy
+            </h1>
             <p className="mt-6 text-lg sm:text-xl text-[var(--klear-neutral-600)] max-w-2xl mx-auto lg:mx-0 animate-fade-in-up animate-delay-200">
               Clinician-guided ketamine treatment for depression, anxiety, and PTSD.
               Experience breakthrough relief from the comfort of your home.
@@ -308,7 +302,7 @@ function BenefitsSection() {
               {benefit.imageId === "1f" ? (
                 <div className="w-full relative aspect-video">
                   <Image
-                    src="/comfort.webp"
+                    src="/relaxing2.webp"
                     alt={benefit.imageDesc}
                     fill
                     className="object-cover"
@@ -720,10 +714,10 @@ export default function Home() {
     <>
       <HeroSection />
       <StatsSection />
-      <PricingComparisonSection />
       <HowItWorksSection />
       <BenefitsSection />
       <TestimonialsSection />
+      <PricingComparisonSection />
       <FAQSection />
       <CTASection />
     </>
