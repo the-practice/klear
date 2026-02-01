@@ -332,7 +332,7 @@ function BenefitsSection() {
               ) : benefit.imageId === "1i" ? (
                 <div className="w-full relative aspect-video">
                   <Image
-                    src="/licensed.webp"
+                    src="/ongoing.webp"
                     alt={benefit.imageDesc}
                     fill
                     className="object-cover"
