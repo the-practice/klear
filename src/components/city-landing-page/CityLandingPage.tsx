@@ -164,7 +164,7 @@ export function CityLandingPage({ city }: CityLandingPageProps) {
                 Serving {name}, Florida
               </span>
             </div>
-            <h1 className={`text-4xl sm:text-5xl font-bold ${isTampa ? "text-white" : "text-[var(--klear-neutral-900)]"}`}>
+            <h1 className={`text-4xl sm:text-5xl font-bold ${isTampa ? "!text-white" : "text-[var(--klear-neutral-900)]"}`}>
               Ketamine Treatment for {name}, Florida Residents
             </h1>
             <p className={`mt-6 text-lg ${isTampa ? "text-white/85" : "text-[var(--klear-neutral-600)]"}`}>
