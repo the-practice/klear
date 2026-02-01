@@ -9,6 +9,7 @@ interface CityLandingPageProps {
 
 export function CityLandingPage({ city }: CityLandingPageProps) {
   const { name, county, neighborhoods, subheadline, localContext, testimonial, nearbyCities } = city;
+  const isTampa = city.slug === "tampa";
 
   const conditions = [
     {
@@ -119,27 +120,54 @@ export function CityLandingPage({ city }: CityLandingPageProps) {
     <div className="pt-16">
       {/* Hero Section */}
       <section className="py-20 lg:py-28 gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0 opacity-15">
-          <ImagePlaceholder
-            id={`hero-${city.slug}`}
-            aspectRatio="banner"
-            description={`${name} landscape - Florida scenery, calming home setting`}
-            className="w-full h-full rounded-none border-0"
-          />
-        </div>
+        {isTampa ? (
+          <>
+            <Image
+              src="/tampa.webp"
+              alt={`${name} skyline background`}
+              fill
+              className="object-cover"
+              sizes="100vw"
+              priority
+            />
+            <div className="absolute inset-0 bg-black/55" />
+          </>
+        ) : (
+          <div className="absolute inset-0 opacity-15">
+            <ImagePlaceholder
+              id={`hero-${city.slug}`}
+              aspectRatio="banner"
+              description={`${name} landscape - Florida scenery, calming home setting`}
+              className="w-full h-full rounded-none border-0"
+            />
+          </div>
+        )}
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--klear-primary-50)] border border-[var(--klear-primary-200)] mb-6">
-              <svg className="w-5 h-5 text-[var(--klear-primary-600)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div
+              className={`inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6 ${
+                isTampa
+                  ? "bg-white/10 border border-white/30 text-white"
+                  : "bg-[var(--klear-primary-50)] border border-[var(--klear-primary-200)]"
+              }`}
+            >
+              <svg
+                className={`w-5 h-5 ${isTampa ? "text-white" : "text-[var(--klear-primary-600)]"}`}
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
-              <span className="text-sm font-medium text-[var(--klear-primary-700)]">Serving {name}, Florida</span>
+              <span className={`text-sm font-medium ${isTampa ? "text-white" : "text-[var(--klear-primary-700)]"}`}>
+                Serving {name}, Florida
+              </span>
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-[var(--klear-neutral-900)]">
+            <h1 className={`text-4xl sm:text-5xl font-bold ${isTampa ? "text-white" : "text-[var(--klear-neutral-900)]"}`}>
               Ketamine Treatment for {name}, Florida Residents
             </h1>
-            <p className="mt-6 text-lg text-[var(--klear-neutral-600)]">
+            <p className={`mt-6 text-lg ${isTampa ? "text-white/85" : "text-[var(--klear-neutral-600)]"}`}>
               {subheadline}
             </p>
             <div className="mt-10">
@@ -155,27 +183,16 @@ export function CityLandingPage({ city }: CityLandingPageProps) {
       </section>
 
       {/* Scenic Banner Image */}
-      <section className="relative w-full">
-        {city.slug === 'tampa' ? (
-          <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
-            <Image
-              src="/tampa.webp"
-              alt={`${name} scenic view - Florida landscape`}
-              fill
-              className="object-cover"
-              sizes="100vw"
-              priority
-            />
-          </div>
-        ) : (
+      {!isTampa && (
+        <section className="relative w-full">
           <ImagePlaceholder
             id={`banner-${city.slug}`}
             aspectRatio="wide"
             description={`${name} scenic view - Florida landscape or comfortable home setting`}
             className="w-full rounded-none border-0"
           />
-        )}
-      </section>
+        </section>
+      )}
 
       {/* Local Context Section - CRITICAL FOR SEO */}
       <section className="py-20 lg:py-28 bg-white">
